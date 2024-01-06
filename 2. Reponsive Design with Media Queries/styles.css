@@ -53,7 +53,8 @@ For each break point, the background of .common-breakpoints must change
   background-color: blue;
 }
 
-@media (min-width: 325px) and (max-width: 480px) {
+/*Only Screen: To avoid multiple trues when using multiple media*/
+@media only screen and (min-width: 325px) and (max-width: 480px) {
   .common-breakpoints {
     background-color: green;
   }
@@ -61,7 +62,7 @@ For each break point, the background of .common-breakpoints must change
 
 @media (min-width: 481px) and (max-width: 768px) {
   .common-breakpoints {
-    background-color: orange;sss
+    background-color: orange;
   }
 }
 
